@@ -67,3 +67,12 @@ pnpm add -D @types/morgan @types/cors
 pnpm add -D nodemon
 ```
 - update scripts `"dev": "nodemon src/index.ts"`
+
+## auth
+
+```bash
+pnpm add jsonwebtoken dotenv
+
+pnpm add -D @types/jsonwebtoken
+```
+

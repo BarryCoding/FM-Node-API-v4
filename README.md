@@ -45,3 +45,13 @@ npx prisma migrate dev --name init
 # reset if needed
 npx prisma migrate reset
 ```
+
+## Routes and Middleware
+
+- RESTful API routes
+  - /product
+  - /update
+  - /updatepoint
+
+- vscode extension: thunder client
+  - test /api/product

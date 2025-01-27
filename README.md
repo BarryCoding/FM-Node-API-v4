@@ -60,3 +60,10 @@ npx prisma migrate reset
 pnpm add morgan cors
 pnpm add -D @types/morgan @types/cors
 ```
+
+### extra
+
+```bash
+pnpm add -D nodemon
+```
+- update scripts `"dev": "nodemon src/index.ts"`

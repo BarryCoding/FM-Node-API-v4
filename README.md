@@ -32,3 +32,16 @@ npx prisma init
   - Product
   - Update
   - UpdatePoint
+
+### Migration
+
+run migration as schema changes to sync with DB
+
+```bash
+pnpm add @prisma/client
+
+npx prisma migrate dev --name init
+
+# reset if needed
+npx prisma migrate reset
+```

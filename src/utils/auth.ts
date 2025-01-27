@@ -1,8 +1,10 @@
+import * as bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 
 export const createJWT = (user: { id: string; username: string }) =>
   jwt.sign({ id: user.id, username: user.username }, process.env.JWT_SECRET!)
 
+// a middleware
 export const protectedRoute = (req: any, res: any, next: any) => {
   const token = req.headers.authorization?.split(' ')[1] // Expecting "Bearer <token>"
 
@@ -28,3 +30,6 @@ export const protectedRoute = (req: any, res: any, next: any) => {
     res.status(403).json({ message: 'Invalid or expired token' })
   }
 }
+
+export const hashPassword = (password: string) => bcrypt.hash(password, 10)
+export const comparePasswords = (password: string, hash: string) => bcrypt.compare(password, hash)

@@ -3,6 +3,7 @@ import express from 'express'
 import morgan from 'morgan'
 import { router } from './router'
 import { protectedRoute } from './utils/auth'
+import { createUser, signIn } from './handlers/user'
 
 const app = express()
 
@@ -16,5 +17,8 @@ app.use('/api', protectedRoute, router)
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
+
+app.post('/user', createUser)
+app.post('/signin', signIn)
 
 export { app }

@@ -76,3 +76,22 @@ pnpm add jsonwebtoken dotenv
 pnpm add -D @types/jsonwebtoken
 ```
 
+- load env with dotenv
+- utils/auth
+  - createJWT
+  - protectedRoute
+
+
+```bash
+pnpm add bcrypt
+
+pnpm add -D @types/bcrypt
+```
+
+- utils/auth
+  - hashPassword
+  - comparePasswords
+- handlers/user
+  - createUser
+  - signIn
+- `npx prisma studio`

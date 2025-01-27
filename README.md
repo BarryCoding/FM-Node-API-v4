@@ -55,3 +55,8 @@ npx prisma migrate reset
 
 - vscode extension: thunder client
   - test /api/product
+
+```bash
+pnpm add morgan cors
+pnpm add -D @types/morgan @types/cors
+```

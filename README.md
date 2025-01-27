@@ -26,3 +26,9 @@ npx prisma init
 - create a [Render](https://dashboard.render.com/) PostgreSQL database
 
 - update `.env` by the above External Database URL
+
+- create Prisma models
+  - User
+  - Product
+  - Update
+  - UpdatePoint

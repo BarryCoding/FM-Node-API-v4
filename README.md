@@ -95,3 +95,12 @@ pnpm add -D @types/bcrypt
   - createUser
   - signIn
 - `npx prisma studio`
+
+## Route Error handlers
+
+- validate inputs and handle errors
+
+```bash
+pnpm add express-validator
+```
+

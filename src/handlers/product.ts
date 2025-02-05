@@ -60,13 +60,17 @@ export const updateProduct = async (req: any, res: any) => {
 /**
  * @description Delete a product of the current user by product id
  */
-export const deleteProduct = async (req: any, res: any) => {
-  const deleted = await prisma.product.delete({
-    where: {
-      id: req.params.id,
-      belongsToId: req.user.id,
-    },
-  })
+export const deleteProduct = async (req: any, res: any, next: any) => {
+  try {
+    const deleted = await prisma.product.delete({
+      where: {
+        id: req.params.id,
+        belongsToId: req.user.id,
+      },
+    })
 
-  res.json({ data: deleted })
+    res.json({ data: deleted })
+  } catch (error) {
+    next(error) // 500 error
+  }
 }

@@ -107,4 +107,7 @@ pnpm add express-validator
 - handlers
   - product CRUD
   - update CRUD
+- Errors
+  - express global level error handling
+  - outside express, process error handling
 

@@ -131,3 +131,6 @@ STAGE=production pnpm dev
 
 STAGE=testing pnpm dev
 ```
+
+- make sure any intense workload is asynchronous
+- or use a child process(worker) to run the code on a different thread

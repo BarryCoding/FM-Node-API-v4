@@ -111,3 +111,23 @@ pnpm add express-validator
   - express global level error handling
   - outside express, process error handling
 
+## config and performance
+
+```zsh
+pnpm add lodash
+pnpm add -D @types/lodash
+```
+
+- config
+  - local
+  - prod
+  - testing
+
+```zsh
+# try run commands
+pnpm dev
+
+STAGE=production pnpm dev
+
+STAGE=testing pnpm dev
+```

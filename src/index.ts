@@ -1,10 +1,11 @@
 import * as dotenv from 'dotenv'
+import config from './config'
 import { app } from './server'
 
 dotenv.config()
 
-app.listen(3000, () => {
-  console.log('Server is running on http://localhost:3000')
+app.listen(config.port, () => {
+  console.log('Server is running on http://localhost:' + config.port)
 })
 
 // last resort error handling, sync error

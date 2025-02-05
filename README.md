@@ -104,3 +104,6 @@ pnpm add -D @types/bcrypt
 pnpm add express-validator
 ```
 
+- handlers
+  - product CRUD
+

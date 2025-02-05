@@ -144,7 +144,12 @@ pnpm add -D @types/supertest @types/jest
 npx ts-jest config:init
 ```
 
-- update test script in package.json
+- update `test` script in package.json
 - unit test: user.test.ts `pnpm test`
 
 - integration test: routes.test.ts `pnpm test`
+
+## deploy
+
+- update `build` `start` script in package.json
+- modify tsconfig.json

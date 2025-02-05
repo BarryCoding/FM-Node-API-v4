@@ -106,4 +106,5 @@ pnpm add express-validator
 
 - handlers
   - product CRUD
+  - update CRUD
 

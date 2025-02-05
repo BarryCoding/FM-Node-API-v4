@@ -15,7 +15,8 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/api', protectedRoute, router)
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  // res.send('Hello World!')
+  res.json({ message: 'Hello World!' })
   // throw new Error('test error') // test sync error
 })
 

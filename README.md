@@ -146,3 +146,5 @@ npx ts-jest config:init
 
 - update test script in package.json
 - unit test: user.test.ts `pnpm test`
+
+- integration test: routes.test.ts `pnpm test`

@@ -134,3 +134,15 @@ STAGE=testing pnpm dev
 
 - make sure any intense workload is asynchronous
 - or use a child process(worker) to run the code on a different thread
+
+## test
+
+```bash
+pnpm add supertest jest ts-jest
+pnpm add -D @types/supertest @types/jest
+
+npx ts-jest config:init
+```
+
+- update test script in package.json
+- unit test: user.test.ts `pnpm test`

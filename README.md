@@ -153,3 +153,15 @@ npx ts-jest config:init
 
 - update `build` `start` script in package.json
 - modify tsconfig.json
+
+- Render dashboard
+  - `new` web service
+  - connect to github
+  - choose the repo
+  - update build command `pnpm install --frozen-lockfile && pnpm build`
+  - update start command `pnpm start`
+  - env variable
+    - STAGE: production
+    - DATABASE_URL: copy internal Database URL from my render db
+    - JWT_SECRET: ?
+- test with thunder client `https://fm-node-api-v4.onrender.com/user`
